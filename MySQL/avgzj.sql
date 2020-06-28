@@ -1,0 +1,2 @@
+use zufang;
+create view avgzj as select '西城区' AS `qy`,avg(`xicheng`.`Rent`) AS `pjzjdata` from `xicheng` union select '东城区' AS `qy`,avg(`dongcheng`.`Rent`) AS `pjzjdata` from `dongcheng` union select '海淀区' AS `qy`,avg(`haidian`.`Rent`) AS `pjzjdata` from `haidian` union select '朝阳区' AS `qy`,avg(`chaoyang`.`Rent`) AS `pjzjdata` from `chaoyang` union select '大兴区' AS `qy`,avg(`daxing`.`Rent`) AS `pjzjdata` from `daxing` union select '丰台区' AS `qy`,avg(`fengtai`.`Rent`) AS `pjzjdata` from `fengtai`
